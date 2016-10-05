@@ -1,0 +1,17 @@
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/naoto/github/mouse2/mouse/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/naoto/github/mouse2/mouse/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/UnityEngine.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/UnityEditor.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Mono.Cecil.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Unity.DataContract.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/naoto/github/mouse2/mouse/Temp/bin/Debug/Mono.Cecil.Mdb.dll
