@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/test_scene.unity
+- path: Assets/Scene/mouse.unity
   isLoaded: 1
   isActive: 1
