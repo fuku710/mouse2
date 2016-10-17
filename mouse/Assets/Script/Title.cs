@@ -9,7 +9,7 @@ public class Title : MonoBehaviour
     {
         if (GUI.Button(new Rect(Screen.width / 2, Screen.height / 2, 200, 40), "スタートボタン"))
         {
-            SceneManager.LoadScene("test_scene");
+            SceneManager.LoadScene("GameScene");
         }
     }
 }
