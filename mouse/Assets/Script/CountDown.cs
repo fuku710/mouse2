@@ -1,20 +1,21 @@
-﻿// ゲームスタート時にカウントダウンする
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CountDown : MonoBehaviour {
 
-    public static int MAX_TIME = 4; // カウントダウンの開始値
+    public static int MAX_TIME = 4;    // カウントダウンの開始値
     private GameObject selected;
     float timeCounter = MAX_TIME;
-    private GameObject Car_boar;    // ゲームオブジェクトの定義
-    private GameObject Car_mouse;
-
+    private GameObject Car_boar;       // イノシシの定義
+    private GameObject Car_mouse;      // ネズミの定義
+    public Text countDown;
+    
     void Start()
     {
-        GetComponent<UnityEngine.UI.Text>().text = MAX_TIME.ToString();
+        countDown = GetComponent<UnityEngine.UI.Text>();
+        countDown.text = MAX_TIME.ToString();
     }
 
     void Update()
@@ -23,6 +24,7 @@ public class CountDown : MonoBehaviour {
 
         Car_boar = GameObject.Find("Car_boar");    // ゲームオブジェクトの設定
         Car_mouse = GameObject.Find("Car_mouse");
+
         Rigidbody cb = Car_boar.GetComponent<Rigidbody>();
         Rigidbody cm = Car_mouse.GetComponent<Rigidbody>();
 
@@ -34,11 +36,11 @@ public class CountDown : MonoBehaviour {
 
         // マイナス値にならないようにしている
         timeCounter = Mathf.Max(timeCounter, 0.0f);
-        GetComponent<UnityEngine.UI.Text>().text = ((int)timeCounter).ToString();
+        countDown.text = ((int)timeCounter).ToString();
 
         if (timeCounter <= 1)    // ゲーム開始時にネズミ、イノシシの動作再開
         {
-            GetComponent<UnityEngine.UI.Text>().enabled = false;    // カウントダウン非表示
+            countDown.enabled = false;    // カウントダウン非表示
             cb.isKinematic = false;
             cm.isKinematic = false;
         }
