@@ -17,7 +17,7 @@ public class SetTimer : MonoBehaviour {
 		minute = 1;
 		second = 2f;
 		totalTime = minute * 60 + second;
-		timeCounter = 60;
+		timeCounter = 63;                // 60+3秒(カウントダウン)
 		oldSecond = 0;
 		textField = this.GetComponent<Text> ();
 	}
@@ -43,6 +43,14 @@ public class SetTimer : MonoBehaviour {
 		timeCounter -= Time.deltaTime;
 
 		timeCounter = Mathf.Max (timeCounter, 0.0f);
-		textField.text = ((int)timeCounter).ToString ();
-	}
+        if (timeCounter > 60)
+        {
+            textField.text = "60";
+        }
+        else
+        {
+            textField.text = ((int)timeCounter).ToString();
+        }
+
+    }
 }
