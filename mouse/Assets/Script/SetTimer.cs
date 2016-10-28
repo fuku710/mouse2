@@ -11,6 +11,7 @@ public class SetTimer : MonoBehaviour {
 	private int oldSecond;
 	//private bool timerFlag = true;
 	private Text textField;
+    public Text winner_text;
 
 	// Use this for initialization
 	void Start () {
